@@ -1,19 +1,35 @@
+<!-- 
+    Hi everyone, following code is preset template,
+    where you can fill your details and your new webpage is ready to be published.
+    Details required are following:
+
+    $full_name: Student's Full Name. For eg: Patel Drumil Nileshbhai.
+    $github_username: Student's Github Username. For eg: weastel.
+    $profile_pic_url: Student's Profile Pic URl can be taken from any public website such as: Github, Facebook.
+    $branch: Student's Branch
+    $studying_year:Student's Year in following format:
+        1st Year:       Freshmen
+        2nd Year:       Sophomore
+        Prefinal Year:  Junior
+        Final Year:     Senior
+    
+ -->
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patel Drumil</title>
+    <title>{$name}</title>
 </head>
 <body>
     <div class="main-content">
-        <h1>Patel Drumil</h1>
-        <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/42701709?s=460&u=c65022cc2f3f024d6ff627f377a9b54017f913ee&v=4" alt=""> 
+        <h1>{$name}</h1>
+        <img class="profile-pic" src="{$profile_pic}" alt=""> 
         <div class="content">
-            <a href="https://github.com/weastel">@weastel</a>
+            <a href="https://github.com/{$github_username}">@{$github_username}</a>
             <div class="description">
                 Hello, World! <br>
-                I am <b>Patel Drumil</b>. <br>
-                I am currently a junior studying Electrical Engineering at Indian Institute Of Technology, Roorkee.
+                I am <b>{$name}</b>. <br>
+                I am currently a {$studying_year} studying {$branch} at Indian Institute Of Technology, Roorkee.
             </div>
         </div>
     </div>
