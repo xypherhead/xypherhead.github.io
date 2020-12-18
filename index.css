@@ -16,7 +16,7 @@ body {
 }
 
 .profile-pic {
-    height: 250px;
+    max-height: 250px;
     border-radius: 999px;
     border-style: solid;
 }
@@ -35,4 +35,10 @@ body {
 .content > .description {
     margin: 15px auto;
     max-width: 500px;
+}
+
+@media (max-width: 350px) {
+    .profile-pic {
+        height: 150px;
+    }
 }
