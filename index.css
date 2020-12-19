@@ -1,14 +1,17 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #283b52;
-    font-size: 1.25rem;
 }
 
 .main-content {
     text-align: left;
     margin-left: 230px;
-    margin-top: 150px;
+    margin-top: 120px;
     padding: 10px;
+}
+
+.main-content > h2 {
+    font-size: 40px;
 }
 
 .profile-pic {
@@ -18,7 +21,7 @@ body {
 }
 
 .content {
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
 }
 
@@ -32,7 +35,7 @@ body {
 }
 
 .content > .description {
-    max-width: 500px;
+    max-width: 450px;
     color: #ffffff;
 }
 
@@ -40,13 +43,13 @@ body {
     color: #ffbf00;
 }
 
-@media (max-width: 350px) {
+@media only screen and (max-width: 700px) {
     .profile-pic {
         height: 150px;
     }
 
     .main-content {
-        margin-left: 120px;
-        margin-top: 50px;
+        margin-left: 40px;
+        margin-top: 20px;
     }
 }
