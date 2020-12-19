@@ -44,4 +44,9 @@ body {
     .profile-pic {
         height: 150px;
     }
+
+    .main-content {
+        margin-left: 120px;
+        margin-top: 50px;
+    }
 }
